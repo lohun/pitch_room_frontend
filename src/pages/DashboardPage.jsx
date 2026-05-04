@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Plus, BarChart3, Clock, AlertCircle, CheckCircle2, Rocket } from 'lucide-react';
 
-const API_BASE = 'http://94.72.104.202';
+const API_BASE = import.meta.env.API_URL;
 
 const DashboardPage = () => {
   const navigate = useNavigate();
