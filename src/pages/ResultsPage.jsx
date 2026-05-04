@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { ChevronRight, BarChart3, TrendingUp, AlertCircle, RefreshCcw, Save, Rocket } from 'lucide-react';
 
-const API_BASE = 'http://localhost:8000';
+const API_BASE = 'http://94.72.104.202';
 
 const ResultsPage = () => {
   const { sessionId } = useParams();

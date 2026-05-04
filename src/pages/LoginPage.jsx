@@ -20,7 +20,7 @@ const LoginPage = () => {
       formData.append('username', email);
       formData.append('password', password);
 
-      const response = await fetch('http://localhost:8000/auth/token', {
+      const response = await fetch('http://94.72.104.202/auth/token', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
 import { Rocket, Upload, Mic, ChevronRight, Check } from 'lucide-react';
 
-const API_BASE = 'http://localhost:8000';
+const API_BASE = 'http://94.72.104.202';
 
 const SetupPage = () => {
   const navigate = useNavigate();
