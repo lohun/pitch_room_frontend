@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
 import { Rocket, Upload, Mic, ChevronRight, Check } from 'lucide-react';
 
-const API_BASE = import.meta.env.API_URL;
+const API_BASE = import.meta.env.VITE_API_ENDPOINT;
 
 const SetupPage = () => {
   const navigate = useNavigate();

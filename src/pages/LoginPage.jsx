@@ -15,12 +15,13 @@ const LoginPage = () => {
     setIsLoading(true);
     setError(null);
 
+
     try {
       const formData = new URLSearchParams();
       formData.append('username', email);
       formData.append('password', password);
 
-      const response = await fetch(import.meta.env.API_URL + '/auth/token', {
+      const response = await fetch(import.meta.env.VITE_API_ENDPOINT + '/auth/token', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',

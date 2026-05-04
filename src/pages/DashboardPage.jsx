@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Plus, BarChart3, Clock, AlertCircle, CheckCircle2, Rocket } from 'lucide-react';
 
-const API_BASE = import.meta.env.API_URL;
+const API_BASE = import.meta.env.VITE_API_ENDPOINT;
 
 const DashboardPage = () => {
   const navigate = useNavigate();

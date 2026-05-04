@@ -25,7 +25,7 @@ const RegisterPage = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch(import.meta.env.API_URL + '/auth/register', {
+      const response = await fetch(import.meta.env.VITE_API_ENDPOINT + '/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

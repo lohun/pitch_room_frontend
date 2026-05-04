@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { ChevronRight, BarChart3, TrendingUp, AlertCircle, RefreshCcw, Save, Rocket } from 'lucide-react';
 
-const API_BASE = import.meta.env.API_URL;
+const API_BASE = import.meta.env.VITE_API_ENDPOINT;
 
 const ResultsPage = () => {
   const { sessionId } = useParams();
