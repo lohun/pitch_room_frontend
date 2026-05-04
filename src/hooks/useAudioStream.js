@@ -65,7 +65,7 @@ export const useAudioStream = (sessionId) => {
     try {
       setStatus('connecting');
       const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-      const wsUrl = `${protocol}//localhost:8000/ws/audio/${sessionId}`;
+      const wsUrl = `${protocol}//${import.meta.env.VITE_WEBHOOK}/ws/audio/${sessionId}`;
       socketRef.current = new WebSocket(wsUrl);
 
       socketRef.current.onopen = async () => {

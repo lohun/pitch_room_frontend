@@ -121,7 +121,7 @@ const SetupPage = () => {
                 padding: '1rem',
                 border: '1px solid var(--border)',
                 borderRadius: '12px',
-                color: 'rgba(255,255,255,0.02)',
+                color: 'white',
                 outline: 'none',
                 background: 'rgba(255,255,255,0.02)',
                 appearance: 'none'
@@ -129,9 +129,9 @@ const SetupPage = () => {
               value={persona}
               onChange={(e) => setPersona(e.target.value)}
             >
-              <option value="elevator">Elevator Pitch (Quick & Sharp)</option>
-              <option value="vc" selected>Skeptical VC (Hard Challenges)</option>
-              <option value="deep">Deep Tech Specialist (Highly Technical)</option>
+              <option style={{ background: '#0F172A' }} value="elevator">Elevator Pitch (Quick & Sharp)</option>
+              <option style={{ background: '#0F172A' }} value="vc">Skeptical VC (Hard Challenges)</option>
+              <option style={{ background: '#0F172A' }} value="deep">Deep Tech Specialist (Highly Technical)</option>
             </select>
           </div>
 
